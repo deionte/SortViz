@@ -1,0 +1,39 @@
+.logo-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.home-logo {
+  height: 10rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.array-button {
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  background-color: #212529;
+  border-color: #339af0;
+  border-radius: 10px; 
+  align-self: center;
+}
+
+.array-button:hover {
+  cursor: pointer;
+}
+
+.array-container {
+  position: absolute;
+  left: 100px;
+}
+
+.array-bar {
+  width: 2px;
+  background-color: #339af0;
+  display: inline-block;
+  margin: 0 4px;
+}
