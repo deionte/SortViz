@@ -3,14 +3,52 @@ import { useState, useEffect } from "react";
 import { getMergeSortAnimations } from "../MergeSort/mergesort";
 import "../styles/SortingVisualizer.css";
 
-
 const ANIMATION_SPEED_MS = 1;
 
-const NUMBER_OF_ARRAY_BARS = 230;
+let NUMBER_OF_ARRAY_BARS = 230;
 
 const PRIMARY_COLOR = "#339af0";
 
 const SECONDARY_COLOR = "#f03e3e";
+
+if (window.innerWidth < 2200) {
+  NUMBER_OF_ARRAY_BARS = 200;
+}
+
+if (window.innerWidth < 2000) {
+  NUMBER_OF_ARRAY_BARS = 180;
+}
+
+if (window.innerWidth < 1800) {
+  NUMBER_OF_ARRAY_BARS = 160;
+}
+
+if (window.innerWidth < 1600) {
+  NUMBER_OF_ARRAY_BARS = 140;
+}
+
+if (window.innerWidth < 1400) {
+  NUMBER_OF_ARRAY_BARS = 120;
+}
+
+if (window.innerWidth < 1200) {
+  NUMBER_OF_ARRAY_BARS = 85;
+}
+
+if (window.innerWidth < 1000) {
+  NUMBER_OF_ARRAY_BARS = 75;
+}
+if (window.innerWidth < 825) {
+  NUMBER_OF_ARRAY_BARS = 55;
+}
+
+if (window.innerWidth < 600) {
+  NUMBER_OF_ARRAY_BARS = 35;
+}
+
+if (window.innerWidth < 450) {
+  NUMBER_OF_ARRAY_BARS = 22;
+}
 
 function SortViz() {
   const [stateArray, setStateArray] = useState([]);
@@ -64,10 +102,10 @@ function SortViz() {
 
       <div className="button-container">
         <button className="array-button" onClick={() => resetArray()}>
-         Create New Array
+          Create New Array
         </button>
         <button className="array-button" onClick={() => mergeSort()}>
-         Sort
+          Sort
         </button>
       </div>
 
