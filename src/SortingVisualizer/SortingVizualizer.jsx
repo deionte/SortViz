@@ -5,11 +5,11 @@ import "../styles/SortingVisualizer.css";
 
 const ANIMATION_SPEED_MS = 1;
 
-let NUMBER_OF_ARRAY_BARS = 230;
-
 const PRIMARY_COLOR = "#339af0";
 
 const SECONDARY_COLOR = "#f03e3e";
+
+let NUMBER_OF_ARRAY_BARS = 230;
 
 if (window.innerWidth < 2200) {
   NUMBER_OF_ARRAY_BARS = 200;
@@ -23,8 +23,16 @@ if (window.innerWidth < 1800) {
   NUMBER_OF_ARRAY_BARS = 160;
 }
 
+if (window.innerWidth < 1750) {
+  NUMBER_OF_ARRAY_BARS = 150;
+}
+
 if (window.innerWidth < 1600) {
   NUMBER_OF_ARRAY_BARS = 140;
+}
+
+if (window.innerWidth < 1550) {
+  NUMBER_OF_ARRAY_BARS = 130;
 }
 
 if (window.innerWidth < 1400) {
